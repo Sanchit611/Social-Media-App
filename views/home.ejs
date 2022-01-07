@@ -1,0 +1,62 @@
+<%- include("partials/header") %>
+<link rel="stylesheet" href="/css/main.css">   
+
+<style>
+    body{
+        background-color: white;
+
+        
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            
+            <%- include("./partials/navbar") %>
+            
+            <div class="main-content-container col-10 col-md-8 col-lg-6">
+                <h1 class="fw-bold titleContainer">Home</h1>
+                <!-- --------- -->
+                
+                <%- include("./partials/modal") %>
+                <!-- ----- -->
+
+                <div class="mb-3 postContainer">
+                    <div class="userImageContainer">
+                        <img src="/images/profilePic.jpeg" alt="User Profile">
+                    </div>
+                    
+                    <div class="textareaContainer">
+                        
+                            <textarea id="post-text" name="" id="" cols="30" rows="3" placeholder="What's happening?"></textarea>
+                            <button id="submitPostButton" type="submit">Post</button>
+                      
+                    </div>
+
+                   
+                </div>
+                <div>
+                    <div class="postsContainer"></div>
+                </div>
+                
+            </div>
+            <div class="d-none d-md-block col-md-2 col-lg-4">
+              <h5> &nbsp; &nbsp; Whats Hot in Town?</h5> 
+                <br>
+         
+         <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1543C/production/_118200178_gettyimages-1128061419.jpg" style="width: 400px; height: 300px; margin-left: 20px;" alt="">
+         <br>
+         <br>
+         <img src="https://hippie-inheels.com/wp-content/uploads/2018/02/30-BEST-PLACES-TO-VISIT-IN.jpg" style="width: 400px; height: 300px; margin-left: 20px;" alt="">
+            </div>
+           
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/jQuery.js"></script>
+<script src="/js/common.js"></script>
+<%- include("partials/footer") %>

@@ -1,0 +1,49 @@
+<%- include("../partials/header") %>
+<link rel="stylesheet" href="/css/login.css">
+
+<style>
+  body{
+    /* background-image: url(https://cdn.wallpapersafari.com/57/89/CJYAEO.jpg); */
+    background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
+  }
+</style>
+
+
+</head>
+<body>
+
+
+<div class="container ">
+  <br>
+  <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 400px; height: 200px; align-items: center;" src="https://marketingland.com/wp-content/ml-loads/2016/07/Twitter_WhatsHappening-1920.png" alt="">  -->
+  <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 400px; height: 400px; align-items: center;" src="https://cliply.co/wp-content/uploads/2019/07/371907030_TWITTER_ICON_1080.png" alt="">  -->
+    <div class="row">
+      
+      <div class="col-lg-3"></div>
+        <div class="col-lg-6 logincontainer">
+            <h6 class="display-6 text-center">Login</h6>
+            
+            <%- include("../partials/flash") %>
+            
+            <form class="mt-5" action="/login" method="POST">
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="username" placeholder="username" name="username" >
+                </div>
+                <div class="mb-3">
+                
+                  <input type="password" class="form-control" id="password"placeholder="password" name="password" >
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </div>
+                <div class="mb-3 mt-3">
+                    <p><a href="/register">Need an account ? Register here</a></p>
+                </div>
+                
+              </form>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+   
+
+</div>
